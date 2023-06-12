@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Spartan', sans-serif;
+        }
+        h2 {
+            font-size: 46px;
+            line-height: 54px;
+            color: #222;
+        }
+        h3 {
+            font-size: 20px;
+            color: #222;
+        }
+        h5 {
+            font-weight: 700;
+            font-size: 14px;
+        }
+        p {
+            font-size: 16px;
+            color: #465b52;
+            margin: 15px 0 20px 0;
+        }
+        .section-p1 {
+            padding: 100px 40px;
+            align-items: center;
+        }
+        .section-m1 {
+            margin: 40px 0;
+        }
+        body {
+            width: 100%;
+        }
+        #header {
+            align-items: right;
+            justify-content: space-between;
+            padding: 25px 50px;
+            background-color: rgb(218, 188, 255);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);   
+            position: sticky;
+        }
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a; 
+            transition: 0.3s ease;
+        }
+        #navbar li a:hover,
+        #navbar li a.active {
+            color:rgb(40, 26, 133);
+        }
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background:rgb(40, 26, 133);
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        #intro {
+            padding: 50px 50px;
+            background-color: rgb(248, 232, 252);
+        }
+        #intro .prof-sum {
+            padding: 30px 0;
+            padding-right: 450px;
+        }
+        #intro .prof-sum h5 {
+            padding-top: 25px;
+        }
+        #intro img {
+            width: 28%;
+            border-radius: 50%;
+            padding: 20px 20px;
+        }
+        #intro .exp {
+            padding: 15px 0;
+            padding-right: 450px;
+        }
+        #intro .exp h5 {
+            padding-top: 25px;
+        }
+        #intro .achmnts {
+            padding: 20px 0;
+            padding-right: 450px;
+        }
+        #intro .achmnts h5 {
+            padding-top: 25px;;
+        }
+        #contact-foot {
+            background-image: url(https://64.media.tumblr.com/63127ee97ac82b4fd62e530bb226315e/tumblr_pdj1sxgjMk1vxg6x3o1_1280.jpg);
+            background-size: cover;
+        }
+        #contact-foot .foot {
+            padding: 50px 50px;
+        }
+        #contact-foot .foot i {
+            padding-right: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <section id = "header"> 
+        <div> 
+          <ul id = "navbar">
+            <li> <a class="active" href = "C:\Users\KIIT\AppData\Local\Programs\Microsoft VS Code\IntroPage.html">Home</a> </li>
+            <li> <a href = "https://inkingsoulss.blogspot.com/?m=1&fbclid=PAAabtgFqKqK47Q8s3_RAlDzNl5s7msq78lHU9traVWLCYRXyAil37dxu8KV8">My Blog</a> </li>
+            <li> <a href = "#contact-foot">Contact</a> </li>
+          </ul>
+        </div>
+    </section>  
+    <section id = "intro">
+        <div class = "image">
+            <img src = "Prof_pic.jpeg" align = "right">
+        </div>
+        <h2>Saumya Mishra</h2>
+        <div class = "prof-sum">
+            <h3><u>Professional Summary</u></h3>
+            <h5>Proficient in identifying target audience, and creating interesting 
+                content accordingly. Hold experience inorganizing events along with 
+                my team, and engaging theaudience. Can adapt to diverse audiences easily.
+            </h5>
+        </div>
+        <div class = "exp">
+            <h3><u>Experience</u></h3>
+            <h5>Worked as a Content Writer at 'Educrafters' where I was involved in writing
+                multiple scripts for YouTube videos.
+            </h5>
+            <h5>Worked as Web Developer intern at 'InternPe' and created multiple webpages
+                using html, css, and javascript.
+            </h5>
+        </div>
+        <div class = "achmnts">
+            <h3><u>Achievements</u></h3>                
+            <h5><i class="far fa-medal"></i>  1st Place in DSA Hackathon</h5>
+            <h5><i class="far fa-book"></i>  Poem published in anthology book 'Wanderlust Vol II'</h5>
+            <h5><i class="far fa-book"></i>  Poem published in anthology book 'Paradise Vol II'</h5>
+        </div>
+    </section>
+    <section id = "contact-foot">
+        <div class = "foot">
+            <a href = "https://www.linkedin.com/in/saumya-mishra-b26130223/"><i class = "fab fa-linkedin"> </i></a>
+            <a href = "https://github.com/saumyaamishra"><i class = "fab fa-github"> </i></a>
+        </div>
+    </section>
+  </body>
+</html>
